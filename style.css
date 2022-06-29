@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #241414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#title {
+    color: #7af5b8;
+
+    padding: 10px;
+    font-weight: 900;
+}
+
+
+form {
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+
+#btn {
+    background: none;
+    border: none; 
+    outline: none;
+    padding: 15px;
+    font-size: 1.8rem;
+    color: #7af5b8;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+i {
+    pointer-events: none;
+}
+
+#btn:hover {
+    text-shadow: 0 0 5px #7af5b8;
+}
+
+#input {
+    background: none;
+    border: none; 
+    outline: none;
+    padding: 10px 15px;
+    min-width: 50%;
+    font-size: 1.4rem;
+    color: #7af5b8;
+    transition: all 0.3s ease;
+}
+
+#input:hover {
+    box-shadow: 0 0 5px #7af5b8;   
+}
+
+
+#filter {
+    width: 50%;
+    margin: 20px auto;
+    background: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    
+}
+
+.filter {
+    width: 50%;
+    text-decoration: none;
+    color: #7af5b8;
+    align-items: center;
+    font-weight: 300;
+}
+  
+.filter:hover {
+    transition: all 0.3s ease;
+    padding: 10px;
+    font-size: x-large ;
+    text-decoration: none;
+  }
+
+#list {
+    width: 80%;
+    margin: auto;
+    list-style: none;
+  }
+  
+  .todo {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #282828;
+    border-radius: 10px;
+    min-height: 3rem;
+    padding: 10px;
+    display: flex;
+    color: #7af5b8;
+    transition: all 0.3s ease;
+    align-items: center;
+    font-weight: 300;
+  }
+
+  .todo span{
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+  }
+  
+  .todo:hover {
+    box-shadow: 0px 0px 5px #7af5b8;
+  }
+
+  .check, .trash {
+    cursor: pointer;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    color: #7bcfa5;
+    text-shadow: 0px 0px 30px #7af5b8;
+    transition: all 0.3s ease;
+  }
+
+  .check:hover {
+    color: rgb(37, 253, 37);
+    text-shadow: 0px 0px 30px lightgreen;
+  }
+
+  .trash:hover {
+    color: red;
+    text-shadow: 0px 0px 30px pink;
+  }
+
+  .fade {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .completed {
+    opacity: 0.4;
+    text-decoration: line-through;
+    transition: all 0.3s ease;
+  }
+
+  footer{
+    color: #1f372b;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #1f372b;
+    transition: all 1s ease-in-out;
+
+  }
+
+  footer a:hover{
+    color: #7af5b8;
+    transition: all 1s ease-in-out;
+
+  }
+
+  --moz::selection {
+    background-color: #7af5b8;
+    color: #241414;
+  }
+  
+  ::selection {
+    background-color: #7af5b8;
+    color: #241414;
+  }

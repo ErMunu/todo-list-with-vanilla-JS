@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head>
+<body>
+    <h1 id="title"><i class="fas fa-tasks"></i>&nbsp; Todo List</h1>
+    <form>
+        <input type="text" id="input" placeholder="Enter task">
+        <button id="btn" type="submit">
+            <i class="fas fa-plus"></i>
+        </button>
+    </form>
+    <div id="filter">
+        <a href="#" class="filter" id="all">All ( <span id="allCount"></span> )</a>
+        <a href="#" class="filter" id="completed">Complete ( <span id="completeCount"></span> )</a>
+        <a href="#" class="filter" id="incomplete">Incomplete ( <span id="incompleteCount"></span> )</a>
+    </div>
+    <ul id="list"></ul>
+
+    <div id="filter">
+        <a href="#" class="filter" id="completeAll"><i class="fas fa-check-double"></i> Complete all task</a>
+        <a href="#" class="filter" id="deleteCompleted">Clear completed</a>
+    </div>
+
+    <footer>
+        Developed by <a href="https://muntazir.in">Muntazir Ahmad</a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
