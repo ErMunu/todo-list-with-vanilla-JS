@@ -36,8 +36,6 @@ function addTask(e) {
         taskText.innerText = taskInput.value;
         newTodo.appendChild(taskText);
 
-        //newTodo.innerText = taskInput.value;
-
         const trashButton = document.createElement('button');
         trashButton.innerHTML = '<i class="fas fa-trash"></i>';
         trashButton.classList.add('trash');
