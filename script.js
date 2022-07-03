@@ -64,6 +64,9 @@ function deleteTask(e) {
 
     if (item.classList[0] === 'check'){
         const task = item.parentElement;
+        if (task.classList.contains('completed')){
+            return;
+        }
         task.classList.add('completed');
         completedTask++;
         updateCount();
